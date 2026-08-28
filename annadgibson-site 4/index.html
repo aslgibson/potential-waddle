@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anna D. Gibson</title>
+
+<meta name="description" content="Anna D. Gibson does research on trust, knowledge, and virtual communities in the digital media ecosystem. Research Associate on the Independent Media + Audience Project at the Shorenstein Center, Harvard Kennedy School.">
+<link rel="canonical" href="https://annadgibson.com/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Anna D. Gibson">
+<meta property="og:description" content="Research on trust, knowledge, and virtual communities in the digital media ecosystem.">
+<meta property="og:url" content="https://annadgibson.com/">
+<meta property="og:image" content="https://annadgibson.com/anna-2x.jpg">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Anna D. Gibson",
+  "url": "https://annadgibson.com/",
+  "jobTitle": "Research Associate",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Shorenstein Center on Media, Politics and Public Policy, Harvard Kennedy School",
+    "url": "https://shorensteincenter.org/"
+  },
+  "email": "mailto:aslgibson@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Boston", "addressRegion": "MA", "addressCountry": "US" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "Stanford University" },
+    { "@type": "CollegeOrUniversity", "name": "Pomona College" }
+  ],
+  "image": "https://annadgibson.com/anna-2x.jpg",
+  "knowsAbout": ["Trust", "Virtual communities", "Independent media", "Creator economy", "Digital media ecosystem", "Content moderation", "Digital ethnography"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=PXVUMdkAAAAJ",
+    "https://www.linkedin.com/in/aslgibson/"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg:        #FBFAF7;
+    --surface:   #FFFFFF;
+    --ink:       #1A1917;
+    --muted:     #5F5A52;
+    --faint:     #8B857A;
+    --rule:      #E5E1D8;
+    --accent:    #9A4A31;
+    --accent-bg: #F6EDE8;
+    --shadow:    0 1px 2px rgba(26,25,23,.04), 0 8px 24px -12px rgba(26,25,23,.10);
+    --measure:   34rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:        #141310;
+      --surface:   #1D1B17;
+      --ink:       #F1EEE7;
+      --muted:     #A8A297;
+      --faint:     #8A8479;
+      --rule:      #302C25;
+      --accent:    #E0906F;
+      --accent-bg: #2A211C;
+      --shadow:    0 1px 2px rgba(0,0,0,.30), 0 8px 24px -12px rgba(0,0,0,.55);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (max-width: 34rem) { body { font-size: 16px; } }
+
+  a { color: inherit; }
+
+  h1, h2, h3 {
+    font-family: Newsreader, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  /* ---------- layout ---------- */
+
+  .wrap {
+    width: 100%;
+    max-width: 47rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section { padding: 4.5rem 0; border-top: 1px solid var(--rule); }
+  section:first-of-type { border-top: 0; }
+
+  @media (max-width: 34rem) { section { padding: 3.25rem 0; } }
+
+  .eyebrow {
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 1.75rem;
+  }
+
+  /* ---------- nav ---------- */
+
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: .9rem 1.5rem;
+    max-width: 47rem;
+    margin: 0 auto;
+  }
+
+  .nav-name {
+    font-family: Newsreader, Georgia, serif;
+    font-size: 1.05rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.4rem;
+    font-size: .875rem;
+    color: var(--muted);
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: color .15s, border-color .15s;
+  }
+
+  .nav-links a:hover { color: var(--ink); border-bottom-color: var(--accent); }
+
+  @media (max-width: 34rem) {
+    /* The H1 sits immediately below on mobile, so the nav name is redundant
+       and its width is what pushes the link row off-screen. */
+    .nav-name { display: none; }
+    .nav-inner { padding: .8rem 1.25rem; justify-content: center; }
+    .nav-links { gap: 1rem; font-size: .8rem; }
+  }
+
+  /* ---------- hero ---------- */
+
+  .hero { padding-top: 5.5rem; padding-bottom: 4rem; }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 7vw, 3.9rem);
+    margin-bottom: 1.5rem;
+  }
+
+  /* Portrait sits beside the text on wide screens, above it on narrow ones. */
+  .hero-grid { display: grid; gap: 1.75rem; }
+
+  .portrait {
+    display: block;
+    width: 116px;
+    /* height:auto is required — the width/height attributes act as presentational
+       hints and would otherwise pin the rendered height to 500px. */
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--rule);
+  }
+
+  @media (min-width: 48rem) {
+    .hero-grid {
+      grid-template-columns: 1fr 208px;
+      gap: 3rem;
+      align-items: start;
+    }
+    .hero-text { grid-column: 1; grid-row: 1; }
+    .portrait  { grid-column: 2; grid-row: 1; width: 208px; margin-top: .6rem; }
+  }
+
+  .lede {
+    font-family: Newsreader, Georgia, serif;
+    font-size: clamp(1.2rem, 3vw, 1.45rem);
+    line-height: 1.5;
+    color: var(--ink);
+    max-width: var(--measure);
+    margin: 0 0 2.25rem;
+  }
+
+  .standing {
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    max-width: var(--measure);
+    margin: 0 0 2.5rem;
+    padding: 0;
+    list-style: none;
+    font-size: .95rem;
+    color: var(--muted);
+  }
+
+  .standing li { padding-left: 1rem; position: relative; }
+
+  .standing li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: .68em;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .standing strong { color: var(--ink); font-weight: 500; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+  .btn {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: .6rem 1.15rem;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    transition: background .15s, border-color .15s, color .15s;
+  }
+
+  .btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn-primary:hover { filter: brightness(.92); }
+  @media (prefers-color-scheme: dark) { .btn-primary { color: #17140F; } }
+
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- prose ---------- */
+
+  .prose { max-width: var(--measure); }
+  .prose p { margin: 0 0 1.1rem; }
+  .prose p:last-child { margin-bottom: 0; }
+
+  .prose a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1px;
+  }
+  .prose a:hover { color: var(--accent); }
+
+  /* ---------- writing ---------- */
+
+  .work { list-style: none; margin: 0; padding: 0; }
+
+  .work > li { padding: 1.6rem 0; border-top: 1px solid var(--rule); }
+  .work > li:first-child { border-top: 0; padding-top: 0; }
+
+  .work-year {
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    color: var(--faint);
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .work h3 { font-size: 1.28rem; margin-bottom: .6rem; max-width: var(--measure); }
+
+  .work h3 a { text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+  .work h3 a:hover { border-bottom-color: var(--accent); }
+
+  .finding {
+    margin: 0 0 .7rem;
+    max-width: var(--measure);
+    color: var(--ink);
+  }
+
+  .cite {
+    margin: 0;
+    font-size: .85rem;
+    color: var(--faint);
+    max-width: var(--measure);
+  }
+
+  .cite em { font-style: italic; }
+
+  .tag {
+    display: inline-block;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-bg);
+    padding: .15rem .5rem;
+    border-radius: 4px;
+    margin-left: .5rem;
+    vertical-align: 2px;
+  }
+
+  /* ---------- speaking ---------- */
+
+  .talks { list-style: none; margin: 0 0 1.75rem; padding: 0; max-width: var(--measure); }
+
+  .talks li {
+    display: flex;
+    gap: 1rem;
+    padding: .6rem 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: .93rem;
+  }
+
+  .talks li:last-child { border-bottom: 0; }
+
+  .talks .yr { color: var(--faint); font-variant-numeric: tabular-nums; flex: 0 0 2.6rem; font-size: .85rem; padding-top: .1rem; }
+
+  .venues { font-size: .9rem; color: var(--muted); max-width: var(--measure); margin: 0; }
+
+  /* ---------- contact ---------- */
+
+  .contact-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-width: var(--measure);
+  }
+
+  .contact-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .6rem; }
+
+  .contact-list a {
+    text-decoration: none;
+    font-size: .95rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1px;
+    transition: border-color .15s, color .15s;
+  }
+
+  .contact-list a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* ---------- footer ---------- */
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 2.25rem 0 3rem;
+    font-size: .82rem;
+    color: var(--faint);
+  }
+
+  footer p { margin: 0; }
+
+  :where(a, .btn):focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">Anna D. Gibson</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#writing">Writing</a>
+      <a href="#speaking">Speaking</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+
+        <img class="portrait"
+             src="anna.jpg"
+             srcset="anna.jpg 420w, anna-2x.jpg 840w"
+             sizes="(min-width: 48rem) 208px, 116px"
+             width="420" height="420"
+             alt="Anna D. Gibson">
+
+        <div class="hero-text">
+          <h1>Anna D.&nbsp;Gibson</h1>
+
+          <p class="lede">
+            I do research on trust, knowledge, and virtual communities in the digital
+            media ecosystem.
+          </p>
+
+          <ul class="standing">
+            <li><strong>Research Associate</strong>, <a href="https://shorensteincenter.org/research-initiative/imap/">Independent Media + Audience Project</a> at the Shorenstein Center, Harvard Kennedy School</li>
+            <li><strong>PhD</strong>, Department of Communication, Stanford University, 2023</li>
+          </ul>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#writing">Read the research</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap">
+      <p class="eyebrow">About</p>
+      <div class="prose">
+        <p>
+          I am a researcher at the HKS Shorenstein Center, where I work on the Independent
+          Media + Audience Project. A growing share of what the public knows now arrives
+          through independent creators, like YouTubers, rather than through newsrooms. Our
+          project aims to map this emergent ecosystem from both the creator and audience
+          perspectives.
+        </p>
+        <p>
+          Earlier, I researched online communities on Facebook, particularly governance and
+          content moderation at both the platform level and from the level of volunteer
+          admins. That work still shapes how I think about trust and authority online.
+        </p>
+        <p>
+          My career began in Silicon Valley, where I worked for Cisco IT in UX before
+          returning to school. I received my PhD in Communication from Stanford in 2023, and
+          subsequently spent two years as a postdoc at MIT&rsquo;s Comparative Media
+          Studies/Writing program. I also reviewed hundreds of manuscripts as an Associate
+          Managing Editor for the <em>Journal of Computer-Mediated Communication</em>.
+        </p>
+        <p>
+          I write for academic and general audiences, and I am always glad to hear from
+          journalists, researchers, and people building things in this space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WRITING ============ -->
+  <section id="writing">
+    <div class="wrap">
+      <p class="eyebrow">Selected writing</p>
+
+      <ul class="work">
+
+        <li>
+          <span class="work-year">2026 &mdash; forthcoming</span>
+          <h3>Over-the-Shoulder Observation of Facebook Group Admins</h3>
+          <p class="finding">
+            A methods chapter on what you learn by watching moderators work in real time,
+            rather than asking them about it afterward.
+          </p>
+          <p class="cite">
+            Book chapter in D. Proctor (Ed.), <em>Practicing Digital Ethnography</em>. Routledge.
+          </p>
+        </li>
+
+        <li>
+          <span class="work-year">2024</span>
+          <h3>
+            <a href="https://doi.org/10.1080/1369118X.2023.2291456">Health and toxicity in content moderation: the discursive work of justification</a>
+            <span class="tag">Open access</span>
+          </h3>
+          <p class="finding">
+            Everyone from platform executives to policymakers describes online spaces as
+            &ldquo;healthy&rdquo; or &ldquo;toxic,&rdquo; as if the terms were obvious.
+          </p>
+          <p class="cite">
+            With Niall Docherty and Tarleton Gillespie. <em>Information, Communication &amp; Society</em>, 27(7), 1441&ndash;1457.
+          </p>
+        </li>
+
+        <li>
+          <span class="work-year">2023</span>
+          <h3>
+            <a href="https://doi.org/10.1177/20563051231186109">What Teams Do: Exploring Volunteer Content Moderation Team Labor on Facebook</a>
+            <span class="tag">Open access</span>
+          </h3>
+          <p class="finding">
+            Volunteer moderators almost always work in teams, and it is not just about
+            splitting the workload.
+          </p>
+          <p class="cite">
+            <em>Social Media + Society</em>, 9(3).
+          </p>
+        </li>
+
+        <li>
+          <span class="work-year">2022</span>
+          <h3>
+            <a href="https://artsfuse.org/253816/book-review-work-pray-code-managing-and-deploying-spirituality-in-silicon-valley/">Review: <em>Work Pray Code</em></a>
+          </h3>
+          <p class="finding">
+            On what happens when Silicon Valley absorbs spirituality into the workplace.
+          </p>
+          <p class="cite">
+            <em>The Arts Fuse</em>.
+          </p>
+        </li>
+
+        <li>
+          <span class="work-year">2020</span>
+          <h3>
+            <a href="https://www.brookings.edu/articles/the-promise-of-restorative-justice-in-addressing-online-harm/">The promise of restorative justice in addressing online harm</a>
+          </h3>
+          <p class="finding">
+            An argument that platforms&rsquo; reflexive answer to harm &mdash; delete the post,
+            ban the user &mdash; leaves the people who were harmed with very little.
+          </p>
+          <p class="cite">
+            With Amy A. Hasinoff and Niloufar Salehi. <em>TechStream</em>, Brookings Institution.
+          </p>
+        </li>
+
+        <li>
+          <span class="work-year">2019</span>
+          <h3>
+            <a href="https://doi.org/10.1177/2056305119832588">Free Speech and Safe Spaces: How Moderation Policies Shape Online Discussion Spaces</a>
+            <span class="tag">Open access</span>
+          </h3>
+          <p class="finding">
+            Two Reddit forums, same topic, same size, opposite moderation philosophies, and
+            roughly a quarter of a million comments across 14 months.
+          </p>
+          <p class="cite">
+            <em>Social Media + Society</em>, 5(1).
+          </p>
+        </li>
+
+      </ul>
+
+      <p style="margin-top:2rem;font-size:.9rem;color:var(--muted);max-width:var(--measure)">
+        A full list is on <a href="https://scholar.google.com/citations?user=PXVUMdkAAAAJ" style="color:inherit;border-bottom:1px solid var(--accent);text-decoration:none">Google Scholar</a>.
+      </p>
+      <!-- CV link removed for now. To restore: put cv.pdf in this folder and add
+           and my <a href="cv.pdf">CV</a> has everything.
+           back into the sentence above, plus the contact-list item in the Contact section. -->
+    </div>
+  </section>
+
+  <!-- ============ SPEAKING ============ -->
+  <section id="speaking">
+    <div class="wrap">
+      <p class="eyebrow">Speaking</p>
+
+      <ul class="talks">
+        <li><span class="yr">2024</span><span>Australian Community Managers</span></li>
+        <li><span class="yr">2024</span><span>MIT Comparative Media Studies/Writing, departmental talk</span></li>
+        <li><span class="yr">2024</span><span>Tufts University, Science, Technology &amp; Society seminar</span></li>
+        <li><span class="yr">2023</span><span>Tufts University, Human&ndash;Robot Interaction Symposium</span></li>
+      </ul>
+
+      <p class="venues">
+        I have also presented at CSCW, the International Communication Association, the
+        American Sociological Association, the Platform Governance Research Network, the
+        Trust and Safety Research Conference, 4S, and HICSS. If you are organizing a panel,
+        briefing, or class visit, please do get in touch.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+
+      <div class="contact-grid">
+        <div class="prose">
+          <p>
+            The fastest way to reach me is email. I am happy to hear from journalists on
+            deadline, researchers working on adjacent questions, and anyone who has read
+            something of mine and has thoughts about it.
+          </p>
+        </div>
+
+        <ul class="contact-list">
+          <li><a href="mailto:aslgibson@gmail.com">aslgibson@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/aslgibson/">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=PXVUMdkAAAAJ">Google Scholar</a></li>
+          <!-- CV link removed for now. To restore:
+          <li><a href="cv.pdf">Curriculum vitae (PDF)</a></li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Anna D. Gibson &middot; Boston, Massachusetts</p>
+  </div>
+</footer>
+
+</body>
+</html>
